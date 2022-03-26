@@ -1,0 +1,203 @@
+1:LVR:0:POS:main.homework@triangleType(int,int,int):12:0 |==> 1
+2:LVR:0:NEG:main.homework@triangleType(int,int,int):12:0 |==> -1
+3:ROR:<=(int,int):<(int,int):main.homework@triangleType(int,int,int):12:a <= 0 |==> a < 0
+4:ROR:<=(int,int):==(int,int):main.homework@triangleType(int,int,int):12:a <= 0 |==> a == 0
+5:ROR:<=(int,int):TRUE(int,int):main.homework@triangleType(int,int,int):12:a <= 0 |==> true
+6:LVR:0:POS:main.homework@triangleType(int,int,int):12:0 |==> 1
+7:LVR:0:NEG:main.homework@triangleType(int,int,int):12:0 |==> -1
+8:ROR:<=(int,int):<(int,int):main.homework@triangleType(int,int,int):12:b <= 0 |==> b < 0
+9:ROR:<=(int,int):==(int,int):main.homework@triangleType(int,int,int):12:b <= 0 |==> b == 0
+10:ROR:<=(int,int):TRUE(int,int):main.homework@triangleType(int,int,int):12:b <= 0 |==> true
+11:COR:||(boolean,boolean):!=(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 |==> a <= 0 != b <= 0
+12:COR:||(boolean,boolean):LHS(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 |==> a <= 0
+13:COR:||(boolean,boolean):RHS(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 |==> b <= 0
+14:COR:||(boolean,boolean):TRUE(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 |==> true
+15:LVR:0:POS:main.homework@triangleType(int,int,int):12:0 |==> 1
+16:LVR:0:NEG:main.homework@triangleType(int,int,int):12:0 |==> -1
+17:ROR:<=(int,int):<(int,int):main.homework@triangleType(int,int,int):12:c <= 0 |==> c < 0
+18:ROR:<=(int,int):==(int,int):main.homework@triangleType(int,int,int):12:c <= 0 |==> c == 0
+19:ROR:<=(int,int):TRUE(int,int):main.homework@triangleType(int,int,int):12:c <= 0 |==> true
+20:COR:||(boolean,boolean):!=(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 || c <= 0 |==> (a <= 0 || b <= 0) != c <= 0
+21:COR:||(boolean,boolean):LHS(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 || c <= 0 |==> a <= 0 || b <= 0
+22:COR:||(boolean,boolean):RHS(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 || c <= 0 |==> c <= 0
+23:COR:||(boolean,boolean):TRUE(boolean,boolean):main.homework@triangleType(int,int,int):12:a <= 0 || b <= 0 || c <= 0 |==> true
+24:AOR:+(int,int):%(int,int):main.homework@triangleType(int,int,int):14:a + b |==> a % b
+25:AOR:+(int,int):*(int,int):main.homework@triangleType(int,int,int):14:a + b |==> a * b
+26:AOR:+(int,int):-(int,int):main.homework@triangleType(int,int,int):14:a + b |==> a - b
+27:AOR:+(int,int):/(int,int):main.homework@triangleType(int,int,int):14:a + b |==> a / b
+28:ROR:>(int,int):!=(int,int):main.homework@triangleType(int,int,int):14:a + b > c |==> a + b != c
+29:ROR:>(int,int):>=(int,int):main.homework@triangleType(int,int,int):14:a + b > c |==> a + b >= c
+30:ROR:>(int,int):FALSE(int,int):main.homework@triangleType(int,int,int):14:a + b > c |==> false
+31:AOR:+(int,int):%(int,int):main.homework@triangleType(int,int,int):14:a + c |==> a % c
+32:AOR:+(int,int):*(int,int):main.homework@triangleType(int,int,int):14:a + c |==> a * c
+33:AOR:+(int,int):-(int,int):main.homework@triangleType(int,int,int):14:a + c |==> a - c
+34:AOR:+(int,int):/(int,int):main.homework@triangleType(int,int,int):14:a + c |==> a / c
+35:ROR:>(int,int):!=(int,int):main.homework@triangleType(int,int,int):14:a + c > b |==> a + c != b
+36:ROR:>(int,int):>=(int,int):main.homework@triangleType(int,int,int):14:a + c > b |==> a + c >= b
+37:ROR:>(int,int):FALSE(int,int):main.homework@triangleType(int,int,int):14:a + c > b |==> false
+38:COR:&&(boolean,boolean):==(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b |==> a + b > c == a + c > b
+39:COR:&&(boolean,boolean):FALSE(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b |==> false
+40:COR:&&(boolean,boolean):LHS(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b |==> a + b > c
+41:COR:&&(boolean,boolean):RHS(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b |==> a + c > b
+42:AOR:+(int,int):%(int,int):main.homework@triangleType(int,int,int):14:b + c |==> b % c
+43:AOR:+(int,int):*(int,int):main.homework@triangleType(int,int,int):14:b + c |==> b * c
+44:AOR:+(int,int):-(int,int):main.homework@triangleType(int,int,int):14:b + c |==> b - c
+45:AOR:+(int,int):/(int,int):main.homework@triangleType(int,int,int):14:b + c |==> b / c
+46:ROR:>(int,int):!=(int,int):main.homework@triangleType(int,int,int):14:b + c > a |==> b + c != a
+47:ROR:>(int,int):>=(int,int):main.homework@triangleType(int,int,int):14:b + c > a |==> b + c >= a
+48:ROR:>(int,int):FALSE(int,int):main.homework@triangleType(int,int,int):14:b + c > a |==> false
+49:COR:&&(boolean,boolean):==(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b && b + c > a |==> (a + b > c && a + c > b) == b + c > a
+50:COR:&&(boolean,boolean):FALSE(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b && b + c > a |==> false
+51:COR:&&(boolean,boolean):LHS(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b && b + c > a |==> a + b > c && a + c > b
+52:COR:&&(boolean,boolean):RHS(boolean,boolean):main.homework@triangleType(int,int,int):14:a + b > c && a + c > b && b + c > a |==> b + c > a
+53:ROR:==(int,int):<=(int,int):main.homework@triangleType(int,int,int):16:a == b |==> a <= b
+54:ROR:==(int,int):>=(int,int):main.homework@triangleType(int,int,int):16:a == b |==> a >= b
+55:ROR:==(int,int):FALSE(int,int):main.homework@triangleType(int,int,int):16:a == b |==> false
+56:ROR:==(int,int):<=(int,int):main.homework@triangleType(int,int,int):16:a == c |==> a <= c
+57:ROR:==(int,int):>=(int,int):main.homework@triangleType(int,int,int):16:a == c |==> a >= c
+58:ROR:==(int,int):FALSE(int,int):main.homework@triangleType(int,int,int):16:a == c |==> false
+59:COR:&&(boolean,boolean):==(boolean,boolean):main.homework@triangleType(int,int,int):16:a == b && a == c |==> a == b == (a == c)
+60:COR:&&(boolean,boolean):FALSE(boolean,boolean):main.homework@triangleType(int,int,int):16:a == b && a == c |==> false
+61:COR:&&(boolean,boolean):LHS(boolean,boolean):main.homework@triangleType(int,int,int):16:a == b && a == c |==> a == b
+62:COR:&&(boolean,boolean):RHS(boolean,boolean):main.homework@triangleType(int,int,int):16:a == b && a == c |==> a == c
+63:STD:<RETURN>:<NO-OP>:main.homework@triangleType(int,int,int):18:return "Equilateral Triangle"; |==> <NO-OP>
+64:EVR:<NEW_ARRAY(int[])>:<DEFAULT>:main.homework@triangleType(int,int,int):21:{a, b, c} |==> null
+65:STD:<CALL>:<NO-OP>:main.homework@triangleType(int,int,int):22:Arrays.sort(edges) |==> <NO-OP>
+66:LVR:0:POS:main.homework@triangleType(int,int,int):23:0 |==> 1
+67:LVR:0:NEG:main.homework@triangleType(int,int,int):23:0 |==> -1
+68:LVR:0:POS:main.homework@triangleType(int,int,int):23:0 |==> 1
+69:LVR:0:NEG:main.homework@triangleType(int,int,int):23:0 |==> -1
+70:AOR:*(int,int):%(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] |==> edges[0] % edges[0]
+71:AOR:*(int,int):+(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] |==> edges[0] + edges[0]
+72:AOR:*(int,int):-(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] |==> edges[0] - edges[0]
+73:AOR:*(int,int):/(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] |==> edges[0] / edges[0]
+74:LVR:POS:0:main.homework@triangleType(int,int,int):23:1 |==> 0
+75:LVR:POS:NEG:main.homework@triangleType(int,int,int):23:1 |==> -1
+76:LVR:POS:0:main.homework@triangleType(int,int,int):23:1 |==> 0
+77:LVR:POS:NEG:main.homework@triangleType(int,int,int):23:1 |==> -1
+78:AOR:*(int,int):%(int,int):main.homework@triangleType(int,int,int):23:edges[1] * edges[1] |==> edges[1] % edges[1]
+79:AOR:*(int,int):+(int,int):main.homework@triangleType(int,int,int):23:edges[1] * edges[1] |==> edges[1] + edges[1]
+80:AOR:*(int,int):-(int,int):main.homework@triangleType(int,int,int):23:edges[1] * edges[1] |==> edges[1] - edges[1]
+81:AOR:*(int,int):/(int,int):main.homework@triangleType(int,int,int):23:edges[1] * edges[1] |==> edges[1] / edges[1]
+82:AOR:+(int,int):%(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] |==> edges[0] * edges[0] % (edges[1] * edges[1])
+83:AOR:+(int,int):*(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] |==> edges[0] * edges[0] * (edges[1] * edges[1])
+84:AOR:+(int,int):-(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] |==> edges[0] * edges[0] - edges[1] * edges[1]
+85:AOR:+(int,int):/(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] |==> edges[0] * edges[0] / (edges[1] * edges[1])
+86:LVR:POS:0:main.homework@triangleType(int,int,int):23:2 |==> 0
+87:LVR:POS:NEG:main.homework@triangleType(int,int,int):23:2 |==> -2
+88:LVR:POS:0:main.homework@triangleType(int,int,int):23:2 |==> 0
+89:LVR:POS:NEG:main.homework@triangleType(int,int,int):23:2 |==> -2
+90:AOR:*(int,int):%(int,int):main.homework@triangleType(int,int,int):23:edges[2] * edges[2] |==> edges[2] % edges[2]
+91:AOR:*(int,int):+(int,int):main.homework@triangleType(int,int,int):23:edges[2] * edges[2] |==> edges[2] + edges[2]
+92:AOR:*(int,int):-(int,int):main.homework@triangleType(int,int,int):23:edges[2] * edges[2] |==> edges[2] - edges[2]
+93:AOR:*(int,int):/(int,int):main.homework@triangleType(int,int,int):23:edges[2] * edges[2] |==> edges[2] / edges[2]
+94:ROR:==(int,int):<=(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] == edges[2] * edges[2] |==> edges[0] * edges[0] + edges[1] * edges[1] <= edges[2] * edges[2]
+95:ROR:==(int,int):>=(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] == edges[2] * edges[2] |==> edges[0] * edges[0] + edges[1] * edges[1] >= edges[2] * edges[2]
+96:ROR:==(int,int):FALSE(int,int):main.homework@triangleType(int,int,int):23:edges[0] * edges[0] + edges[1] * edges[1] == edges[2] * edges[2] |==> false
+97:STD:<RETURN>:<NO-OP>:main.homework@triangleType(int,int,int):25:return "Right Angle Triangle"; |==> <NO-OP>
+98:LVR:0:POS:main.homework@areaOfTriangle(double,double,double):35:0 |==> 1
+99:LVR:0:NEG:main.homework@areaOfTriangle(double,double,double):35:0 |==> -1
+100:ROR:<=(double,double):<(double,double):main.homework@areaOfTriangle(double,double,double):35:a <= 0 |==> a < 0
+101:ROR:<=(double,double):==(double,double):main.homework@areaOfTriangle(double,double,double):35:a <= 0 |==> a == 0
+102:ROR:<=(double,double):TRUE(double,double):main.homework@areaOfTriangle(double,double,double):35:a <= 0 |==> true
+103:LVR:0:POS:main.homework@areaOfTriangle(double,double,double):35:0 |==> 1
+104:LVR:0:NEG:main.homework@areaOfTriangle(double,double,double):35:0 |==> -1
+105:ROR:<=(double,double):<(double,double):main.homework@areaOfTriangle(double,double,double):35:b <= 0 |==> b < 0
+106:ROR:<=(double,double):==(double,double):main.homework@areaOfTriangle(double,double,double):35:b <= 0 |==> b == 0
+107:ROR:<=(double,double):TRUE(double,double):main.homework@areaOfTriangle(double,double,double):35:b <= 0 |==> true
+108:COR:||(boolean,boolean):!=(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 |==> a <= 0 != b <= 0
+109:COR:||(boolean,boolean):LHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 |==> a <= 0
+110:COR:||(boolean,boolean):RHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 |==> b <= 0
+111:COR:||(boolean,boolean):TRUE(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 |==> true
+112:LVR:0:POS:main.homework@areaOfTriangle(double,double,double):35:0 |==> 1
+113:LVR:0:NEG:main.homework@areaOfTriangle(double,double,double):35:0 |==> -1
+114:ROR:<=(double,double):<(double,double):main.homework@areaOfTriangle(double,double,double):35:c <= 0 |==> c < 0
+115:ROR:<=(double,double):==(double,double):main.homework@areaOfTriangle(double,double,double):35:c <= 0 |==> c == 0
+116:ROR:<=(double,double):TRUE(double,double):main.homework@areaOfTriangle(double,double,double):35:c <= 0 |==> true
+117:COR:||(boolean,boolean):!=(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 || c <= 0 |==> (a <= 0 || b <= 0) != c <= 0
+118:COR:||(boolean,boolean):LHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 || c <= 0 |==> a <= 0 || b <= 0
+119:COR:||(boolean,boolean):RHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 || c <= 0 |==> c <= 0
+120:COR:||(boolean,boolean):TRUE(boolean,boolean):main.homework@areaOfTriangle(double,double,double):35:a <= 0 || b <= 0 || c <= 0 |==> true
+121:LVR:0:POS:main.homework@areaOfTriangle(double,double,double):36:0 |==> 1
+122:LVR:0:NEG:main.homework@areaOfTriangle(double,double,double):36:0 |==> -1
+123:AOR:+(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b |==> a % b
+124:AOR:+(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b |==> a * b
+125:AOR:+(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b |==> a - b
+126:AOR:+(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b |==> a / b
+127:ROR:>(double,double):!=(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b > c |==> a + b != c
+128:ROR:>(double,double):>=(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b > c |==> a + b >= c
+129:ROR:>(double,double):FALSE(double,double):main.homework@areaOfTriangle(double,double,double):37:a + b > c |==> false
+130:AOR:+(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c |==> a % c
+131:AOR:+(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c |==> a * c
+132:AOR:+(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c |==> a - c
+133:AOR:+(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c |==> a / c
+134:ROR:>(double,double):!=(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c > b |==> a + c != b
+135:ROR:>(double,double):>=(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c > b |==> a + c >= b
+136:ROR:>(double,double):FALSE(double,double):main.homework@areaOfTriangle(double,double,double):37:a + c > b |==> false
+137:COR:&&(boolean,boolean):==(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b |==> a + b > c == a + c > b
+138:COR:&&(boolean,boolean):FALSE(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b |==> false
+139:COR:&&(boolean,boolean):LHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b |==> a + b > c
+140:COR:&&(boolean,boolean):RHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b |==> a + c > b
+141:AOR:+(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c |==> b % c
+142:AOR:+(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c |==> b * c
+143:AOR:+(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c |==> b - c
+144:AOR:+(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c |==> b / c
+145:ROR:>(double,double):!=(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c > a |==> b + c != a
+146:ROR:>(double,double):>=(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c > a |==> b + c >= a
+147:ROR:>(double,double):FALSE(double,double):main.homework@areaOfTriangle(double,double,double):37:b + c > a |==> false
+148:COR:&&(boolean,boolean):==(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b && b + c > a |==> (a + b > c && a + c > b) == b + c > a
+149:COR:&&(boolean,boolean):FALSE(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b && b + c > a |==> false
+150:COR:&&(boolean,boolean):LHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b && b + c > a |==> a + b > c && a + c > b
+151:COR:&&(boolean,boolean):RHS(boolean,boolean):main.homework@areaOfTriangle(double,double,double):37:a + b > c && a + c > b && b + c > a |==> b + c > a
+152:AOR:+(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b |==> a % b
+153:AOR:+(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b |==> a * b
+154:AOR:+(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b |==> a - b
+155:AOR:+(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b |==> a / b
+156:AOR:+(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b + c |==> (a + b) % c
+157:AOR:+(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b + c |==> (a + b) * c
+158:AOR:+(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b + c |==> a + b - c
+159:AOR:+(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):39:a + b + c |==> (a + b) / c
+160:LVR:POS:0:main.homework@areaOfTriangle(double,double,double):39:2 |==> 0
+161:LVR:POS:NEG:main.homework@areaOfTriangle(double,double,double):39:2 |==> -2
+162:AOR:/(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):39:(a + b + c) / 2 |==> (a + b + c) % 2
+163:AOR:/(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):39:(a + b + c) / 2 |==> (a + b + c) * 2
+164:AOR:/(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):39:(a + b + c) / 2 |==> (a + b + c) + 2
+165:AOR:/(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):39:(a + b + c) / 2 |==> (a + b + c) - 2
+166:AOR:-(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p - a |==> p % a
+167:AOR:-(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):40:p - a |==> p * a
+168:AOR:-(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p - a |==> p + a
+169:AOR:-(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p - a |==> p / a
+170:AOR:*(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) |==> p % (p - a)
+171:AOR:*(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) |==> p + (p - a)
+172:AOR:*(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) |==> p - (p - a)
+173:AOR:*(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) |==> p / (p - a)
+174:AOR:-(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p - b |==> p % b
+175:AOR:-(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):40:p - b |==> p * b
+176:AOR:-(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p - b |==> p + b
+177:AOR:-(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p - b |==> p / b
+178:AOR:*(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) |==> p * (p - a) % (p - b)
+179:AOR:*(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) |==> p * (p - a) + (p - b)
+180:AOR:*(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) |==> p * (p - a) - (p - b)
+181:AOR:*(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) |==> p * (p - a) / (p - b)
+182:AOR:-(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p - c |==> p % c
+183:AOR:-(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):40:p - c |==> p * c
+184:AOR:-(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p - c |==> p + c
+185:AOR:-(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p - c |==> p / c
+186:AOR:*(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) % (p - c)
+187:AOR:*(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) + (p - c)
+188:AOR:*(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) - (p - c)
+189:AOR:*(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) / (p - c)
+190:LVR:POS:0:main.homework@areaOfTriangle(double,double,double):40:10000 |==> 0
+191:LVR:POS:NEG:main.homework@areaOfTriangle(double,double,double):40:10000 |==> -10000
+192:AOR:*(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) * 10000 |==> p * (p - a) * (p - b) * (p - c) % 10000
+193:AOR:*(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) * 10000 |==> p * (p - a) * (p - b) * (p - c) + 10000
+194:AOR:*(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) * 10000 |==> p * (p - a) * (p - b) * (p - c) - 10000
+195:AOR:*(double,double):/(double,double):main.homework@areaOfTriangle(double,double,double):40:p * (p - a) * (p - b) * (p - c) * 10000 |==> p * (p - a) * (p - b) * (p - c) / 10000
+196:LVR:POS:0:main.homework@areaOfTriangle(double,double,double):40:100.0 |==> 0.0
+197:LVR:POS:NEG:main.homework@areaOfTriangle(double,double,double):40:100.0 |==> -100.0
+198:AOR:/(double,double):%(double,double):main.homework@areaOfTriangle(double,double,double):40:((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) / 100.0 |==> ((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) % 100.0
+199:AOR:/(double,double):*(double,double):main.homework@areaOfTriangle(double,double,double):40:((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) / 100.0 |==> ((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) * 100.0
+200:AOR:/(double,double):+(double,double):main.homework@areaOfTriangle(double,double,double):40:((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) / 100.0 |==> ((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) + 100.0
+201:AOR:/(double,double):-(double,double):main.homework@areaOfTriangle(double,double,double):40:((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) / 100.0 |==> ((int)Math.sqrt(p * (p - a) * (p - b) * (p - c) * 10000)) - 100.0
+202:LVR:0:POS:main.homework@areaOfTriangle(double,double,double):42:0 |==> 1
+203:LVR:0:NEG:main.homework@areaOfTriangle(double,double,double):42:0 |==> -1

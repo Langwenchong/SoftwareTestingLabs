@@ -1,0 +1,19 @@
+<project name="homework">
+<!-- The adapted mutation test target -->
+    <target name="homework.test" description="Run mutation analysis for all unit test cases">
+        <echo message="Running mutation analysis ..."/>
+        <junit  printsummary="false" 
+        		showoutput="false" 
+        		mutationAnalysis="true"
+                resultFile="results.csv" 
+                killDetailsFile="killed.csv">
+                
+            <classpath path="bin"/>
+            <batchtest fork="false">
+                <fileset dir="test">
+					<include name="**/*Test*.java"/>
+				</fileset>
+            </batchtest>
+        </junit>
+    </target>
+</project>

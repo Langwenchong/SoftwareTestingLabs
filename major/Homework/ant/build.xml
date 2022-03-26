@@ -1,0 +1,44 @@
+<project name="homework" default="compile" basedir=".">
+    <target name="init">
+        <mkdir dir="bin"/>
+    </target>
+<!-- Target to compile the project -->
+    <target name="compile" depends="init" description="Compile">
+        <javac includeantruntime="true" 
+               srcdir="src"
+              destdir="bin"
+                debug="yes"
+                 fork="yes"
+           executable="${major}">
+            <compilerarg value="${mutator}"/>
+        </javac>
+    </target>
+
+<!-- Target to compile the test suite -->
+    <target name="compile.tests" depends="compile" description="Compile all tests">
+        <javac includeantruntime="true" 
+               srcdir="test"
+              destdir="bin"
+                debug="yes">
+        </javac>
+    </target>
+
+<!-- The adapted mutation test target -->
+    <target name="mutation.test" description="Run mutation analysis for all unit test cases">
+        <echo message="Running mutation analysis ..."/>
+        <junit  printsummary="false" 
+                showoutput="false" 
+                mutationAnalysis="true"
+                resultFile="results.csv" 
+                killDetailsFile="killed.csv"
+                mutantsLogFile="mutants.log">
+                
+            <classpath path="bin"/>
+            <batchtest fork="false">
+                <fileset dir="test">
+                    <include name="**/*Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+</project>
