@@ -1,0 +1,71 @@
+{
+  "id": "35b817bf-7d35-4f7f-b812-bcf11629e51b",
+  "version": "2.0",
+  "name": "se2022",
+  "url": "http://118.178.137.170:8080",
+  "tests": [{
+    "id": "9e4ec02c-ff2b-4698-a143-02774f31d4ca",
+    "name": "se2022",
+    "commands": [{
+      "id": "8f8f250c-e9d0-484b-97e8-927801c05c9f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64af50d0-441f-4eb1-b116-d638bbaaae5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "878x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf832170-c728-4f6e-b5e7-5364a2b8b90d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "郎文翀"
+    }, {
+      "id": "5ab42c0c-be16-4edd-ab40-9609848b241a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "198a0a9e-bc66-42c0-8f5f-bb7188d6e89d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(3)",
+      "targets": [
+        ["css=td:nth-child(3)", "css:finder"],
+        ["xpath=//td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'***244247')]", "xpath:innerText"]
+      ],
+      "value": "***244247"
+    }]
+  }],
+  "suites": [{
+    "id": "e8dbf6d2-da42-4f5d-9154-9c58959f83fc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e4ec02c-ff2b-4698-a143-02774f31d4ca"]
+  }],
+  "urls": ["http://118.178.137.170:8080/"],
+  "plugins": []
+}
